@@ -2,7 +2,6 @@
 
 ## Exercise Information
 
-- **Turn-in directory:** `ex00/`
 - **Files to turn in:** `hh.sh`, `hh.json`
 - **Allowed functions:** `curl`, `jq`
 
@@ -64,11 +63,6 @@ The result in the file must be formatted so that each field is on a different li
 }
 ```
 
-## Requirements
-
-- Your script must be executable
-- The interpreter to use is `/bin/sh`
-- Place your script and the parsing results in the `ex00` folder in the `src` directory of your repository
 
 ## Skills Developed
 
@@ -78,19 +72,3 @@ This exercise will help you learn:
 - JSON processing with `jq`
 - Command line argument handling
 - File output and formatting
-
-## Getting Started
-
-1. Create the `ex00` directory in your `src` folder
-2. Create the `hh.sh` script with proper shebang (`#!/bin/sh`)
-3. Make it executable with `chmod +x hh.sh`
-4. Test with: `./hh.sh "data scientist"`
-5. Verify that `hh.json` is created with proper formatting
-
-## Hints
-
-- Use `curl` to make HTTP requests to the HeadHunter API
-- Use `jq` to format and process JSON data
-- Remember to handle command line arguments properly
-- The API endpoint format is: `https://api.hh.ru/vacancies?text=SEARCH_TERM&per_page=20`
-- You may need to URL-encode the search term
