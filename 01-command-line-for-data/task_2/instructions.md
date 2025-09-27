@@ -4,7 +4,6 @@
 
 ### Exercise Information
 
-- **Turn-in directory:** `ex01/`
 - **Files to turn in:** `filter.jq`, `json_to_csv.sh`, `hh.csv`
 - **Allowed functions:** `jq`
 
@@ -44,39 +43,3 @@ This exercise will help you learn:
 - Creating reusable filter files
 - Working with structured data formats
 - Shell script automation for data processing
-
-### Getting Started
-
-1. Create the `ex01` directory in your `src` folder
-2. Create the `filter.jq` file with your jq filter expression
-3. Create the `json_to_csv.sh` script with proper shebang (`#!/bin/sh`)
-4. Make the script executable with `chmod +x json_to_csv.sh`
-5. Test with the JSON file from the previous exercise
-6. Verify that `hh.csv` is created with proper formatting and headers
-
-### Hints
-
-- Use `jq -r` flag for raw output (without JSON quotes)
-- The `@csv` formatter in jq can help convert arrays to CSV format
-- You'll need to extract specific fields from the JSON structure
-- Remember that the JSON contains an array of items in the `items` field
-- The filter should select only the required fields: `id`, `created_at`, `name`, `has_test`, `alternate_url`
-- Consider using jq's `map()` function to process each vacancy item
-- Headers can be added using jq or echo command
-
-### File Structure
-
-```
-ex01/
-├── INSTRUCTIONS.md     # This file
-├── filter.jq          # Your jq filter
-├── json_to_csv.sh     # Your conversion script
-└── hh.csv            # Output CSV file (generated)
-```
-
-### Example Workflow
-
-1. Use the `hh.json` from Exercise 00 as input
-2. Apply your jq filter to extract the required fields
-3. Convert the output to CSV format with proper headers
-4. Save the result to `hh.csv`
